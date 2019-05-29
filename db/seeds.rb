@@ -19,7 +19,8 @@ sample["movies"].each do |movie|
     "theme_color",
     "rating",
     "genre",
-    "cover"
+    "cover",
+    "video_src"
   ).merge(director: directors[movie["director_slug"]])
 end
 

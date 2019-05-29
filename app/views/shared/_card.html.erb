@@ -17,6 +17,10 @@
     </ul>
     <p class="movie-description"><%= movie.syllabus %></p>
     <hr class="break" />
-    <div class="movie-bottom-info"><a class="movie-watch">Watch Trailer</a></div>
+    <div class="movie-bottom-info">
+      <a class="movie-watch video-btn" data-toggle="modal" data-src="<%= movie.video_src %>" data-target="#video-popup">
+        Watch Trailer
+      </a>
+    </div>
   </div>
 </article>

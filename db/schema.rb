@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 2019_05_29_094429) do
     t.string "title"
     t.integer "year"
     t.text "syllabus"
+    t.string "video_src"
     t.bigint "director_id"
     t.string "theme_color"
     t.string "genre"
@@ -40,6 +41,7 @@ ActiveRecord::Schema.define(version: 2019_05_29_094429) do
     t.string "title"
     t.integer "year"
     t.text "syllabus"
+    t.string "video_src"
     t.string "theme_color"
     t.string "genre"
     t.decimal "rating", precision: 5, scale: 2

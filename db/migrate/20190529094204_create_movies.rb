@@ -4,6 +4,7 @@ class CreateMovies < ActiveRecord::Migration[5.2]
       t.string :title
       t.integer :year
       t.text :syllabus
+      t.string :video_src
       t.references :director, foreign_key: true
       t.string :theme_color
       t.string :genre
