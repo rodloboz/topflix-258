@@ -1,4 +1,7 @@
 class Serie < ApplicationRecord
+  include PgSearch
+  multisearchable against: [ :title, :synopsis ]
+
   def category
     "TV Series"
   end
