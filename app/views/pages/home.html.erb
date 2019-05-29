@@ -1,9 +1,9 @@
 <%= render 'shared/search_box' %>
 <div class="featured-movie">
-  <%= render 'shared/featured', movie: Serie.second %>
+  <%= render 'shared/featured', movie: @movies.first %>
 </div>
 <div class="movies">
-  <% Movie.all.each do |movie| %>
+  <% @movies[1..-1].each do |movie| %>
     <div class="movie-wrapper">
       <%= render 'shared/card', movie: movie %>
     </div>
