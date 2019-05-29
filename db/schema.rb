@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 2019_05_29_094429) do
   create_table "movies", force: :cascade do |t|
     t.string "title"
     t.integer "year"
-    t.text "syllabus"
+    t.text "synopsis"
     t.string "video_src"
     t.bigint "director_id"
     t.string "theme_color"
@@ -40,7 +40,7 @@ ActiveRecord::Schema.define(version: 2019_05_29_094429) do
   create_table "series", force: :cascade do |t|
     t.string "title"
     t.integer "year"
-    t.text "syllabus"
+    t.text "synopsis"
     t.string "video_src"
     t.string "theme_color"
     t.string "genre"

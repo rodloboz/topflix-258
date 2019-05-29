@@ -15,7 +15,7 @@ sample["movies"].each do |movie|
   Movie.create! movie.slice(
     "title",
     "year",
-    "syllabus",
+    "synopsis",
     "theme_color",
     "rating",
     "genre",

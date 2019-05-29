@@ -3,7 +3,7 @@ class CreateSeries < ActiveRecord::Migration[5.2]
     create_table :series do |t|
       t.string :title
       t.integer :year
-      t.text :syllabus
+      t.text :synopsis
       t.string :video_src
       t.string :theme_color
       t.string :genre
